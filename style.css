@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+}
+
+section{
+    background-color: gray;
+    width: 800px;
+    height: 500px;
+    top: 90px;
+    left: 80px;
+    border-radius:5%;
+    text-align: center;
+    margin: auto;
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {    
+    background-image: linear-gradient(gray, white);
+}
+
+input#linkBox {
+    margin-top: 250px;
+    border-radius: 10px;
+    width: 500px;
+    height: 40px;
+    border-width: 0px;
+}
+
+input#shortButton {
+    margin-top: 250px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-width: 0px;
+    margin-left: 20px;
+}

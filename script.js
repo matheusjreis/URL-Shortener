@@ -1,5 +1,7 @@
 let shortenedLink = document.getElementById("linkEntered")
+shortenedLink.innerHTML = `teste`
 let link = 'https://www.google.com.br/'
+
 $.getJSON(
     "https://is.gd/create.php?callback=?",
     {
@@ -12,5 +14,6 @@ $.getJSON(
         console.log(newLink)
     }
 )
+
 
 //console.log(shortenedLink)
