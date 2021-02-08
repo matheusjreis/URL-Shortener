@@ -1,16 +1,20 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: black;
+    background-color:black;
 }
 
 section{
-    background-color: gray;
+    background-color: rgb(109, 106, 146);
     width: 800px;
     height: 500px;
     top: 90px;
     left: 80px;
     border-radius:5%;
     text-align: center;
-    margin: auto;
 }
 h1 {
     color: white;
@@ -22,6 +26,7 @@ input {
     background-image: linear-gradient(gray, white);
     border-color: rgb(34, 29, 29);
     border-width: 1px;
+    display: inline-block;
 }
 
 input#linkBox {
@@ -39,6 +44,16 @@ input#shortButton {
     height: 40px;
     border-radius: 50%;
     margin-left: 20px;
+}
+
+div#loading {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    color: white;
+    border: 1.5px solid;
+    border-top:;
+    border-radius: 50%;
 }
 
 div#shorterLink {

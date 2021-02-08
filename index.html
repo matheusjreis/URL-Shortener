@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URL Shortener</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">    
 </head>
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="./fontawesome-free-5.15.2-web/js/all.min.js"></script>
     <header>
         <h1>
             URL Shortener
@@ -20,6 +21,7 @@
         <input type="text" id="linkBox"> 
         <input type="button" id="shortButton"  onclick="confirmLink()">
         <div id="shorterLink"></div>
+        <div id="loading"></div>
     </section>   
 </body>
 </html>
