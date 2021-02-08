@@ -1,6 +1,6 @@
 function confirmLink(){
     let shortenedLink = document.getElementById("shorterLink")
-    let link = 'https://www.google.com.br/'
+    let link = document.getElementById("linkBox").value
 
     $.getJSON(
         "https://is.gd/create.php?callback=?",
