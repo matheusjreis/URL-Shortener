@@ -7,12 +7,6 @@ function confirmLink(){
 
     changeColorLoading(element, `white`)
 
-    if(link.length === 0){
-        sleep(2)
-        shortenedLink.innerHTML = `Unknow URL`
-        changeColorLoading(element, `#6D6A92`)
-        return 
-    }
     $.getJSON(
         "https://is.gd/create.php?callback=?",
         {
