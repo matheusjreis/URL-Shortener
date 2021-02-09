@@ -9,7 +9,7 @@ body {
 }
 
 section{
-    background-color: rgb(109, 106, 146);
+    background-color: #6D6A92;
     width: 800px;
     height: 500px;
     top: 90px;
@@ -42,7 +42,7 @@ input#linkBox {
 }
 
 input#shortButton {
-    background-color: rgb(106, 106, 202);
+    background-color: #6a6aca;
     margin-top: 250px;
     width: 100px;
     border-radius: 10px;
@@ -53,13 +53,13 @@ input#shortButton:hover {
     background-color: white;
 }
 
-/**div#loading {
+.loading {
     height: 50px;
     width: 50px;
     display: inline-block;
-    color: rgb(250, 250, 250,0.3);
+    color: #6D6A92;
     border: 2px solid;
-    border-top-color: white;
+    border-top-color: #6D6A92;
     border-radius: 50%;
     animation: 1s loader infinite ease-in-out;
 }
@@ -68,7 +68,7 @@ input#shortButton:hover {
     to {
         transform: rotate(360deg);
     }
-}*/
+}
 
 div#shorterLink {
     margin-top: 50px;
