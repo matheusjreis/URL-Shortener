@@ -4,6 +4,7 @@
 }
 
 body {
+    margin-top: 50px;
     background-color:black;
 }
 
@@ -24,31 +25,35 @@ h1 {
 }
 
 input {    
-    background-image: linear-gradient(gray, white);
     border-color: rgb(34, 29, 29);
     border-width: 1px;
     display: inline-block;
+    height: 40px;
 }
 
 input#linkBox {
+    background-image: linear-gradient(gray, white);
     margin-top: 250px;
     border-radius: 10px;
     width: 500px;
-    height: 40px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 16px;
 }
 
 input#shortButton {
+    background-color: rgb(106, 106, 202);
     margin-top: 250px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    width: 100px;
+    border-radius: 10px;
     margin-left: 20px;
 }
 
-div#loading {
+input#shortButton:hover {
+    background-color: white;
+}
+
+/**div#loading {
     height: 50px;
     width: 50px;
     display: inline-block;
@@ -63,7 +68,7 @@ div#loading {
     to {
         transform: rotate(360deg);
     }
-}
+}*/
 
 div#shorterLink {
     margin-top: 50px;
