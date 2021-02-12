@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URL Shortener</title>
-    <link rel="stylesheet" href="./style.css">    
-</head>
-<body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./script.js"></script>
-    <script src="./fontawesome-free-5.15.2-web/js/all.min.js"></script>
-    <header>
-        <h1>
-            URL Shortener
-        </h1>        
-        <div id="linkEntered">
-        </div>
-    </header> 
-    <section>
-        <input type="url"
-         id="linkBox"
-         autofocus 
-         placeholder="Type the URL here"
-         pattern=".*\.com.*"> 
-        <input type="button" value="shorten" id="shortButton" onclick="confirmLink()">
-        <div id="shorterLink"></div><br>
-        <div class="loading"></div>
-    </section>   
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>URL Shortener</title>
+        <link rel="stylesheet" href="./style.css">    
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Brygada+1918&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./script.js"></script>
+        <script src="./fontawesome-free-5.15.2-web/js/all.min.js"></script>
+        <header>
+            <h1 id="title">
+                URL Shortener
+            </h1>        
+        </header> 
+        <section>
+            <input type="url"
+            id="linkBox"
+            autofocus 
+            placeholder="Type the URL here"
+            pattern=".*\.com.*"> 
+            
+            <input type="button" value="shorten" id="shortButton" onclick="confirmLink()">
+
+            <div id="shorterLink"></div><br>
+            <div id="loading"></div>
+        </section>   
+    </body>
+    <footer>
+        
+    </footer>
 </html>

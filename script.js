@@ -1,7 +1,9 @@
 function confirmLink(){
     let shortenedLink = document.getElementById("shorterLink")
     let link = document.getElementById("linkBox").value
-    let element = document.querySelector(".loading")
+    let element = document.querySelector("#loading")
+
+    //shortenedLink.style.fontFamily = "'Brygada 1918', sans-serif"
 
     shortenedLink.innerHTML = ''
 
@@ -19,12 +21,12 @@ function confirmLink(){
             if(newLink === undefined){
                 sleep(2)
                 shortenedLink.innerHTML = `Unknow URL`
-                changeColorLoading(element, `#6D6A92`)
+                changeColorLoading(element, `#757575`)
                 return                 
             }else{
                 sleep(2)
                 shortenedLink.innerHTML = `${newLink}`
-                changeColorLoading(element, `#6D6A92`)
+                changeColorLoading(element, `#757575`)
             }
         }
     )
