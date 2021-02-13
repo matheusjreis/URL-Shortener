@@ -10,6 +10,12 @@ body {
     background-color:black;
 }
 
+h1 {
+    color: white;
+    text-align: center;    
+    margin: 20px;
+}
+
 section{
     background-color: #757575;
     width: 800px;
@@ -21,48 +27,46 @@ section{
     margin: auto;
 }
 
-h1 {
-    color: white;
-    text-align: center;    
-}
 
 input {    
     border-color: rgb(34, 29, 29);
     border-width: 1px;
-    display: inline-block;
-    height: 40px;
+    border-radius: 10px;
+    height: 40px;    
 }
 
 #linkBox {
-    background-image: linear-gradient(gray, white);
-    margin-top: 250px;
-    border-radius: 10px;
-    width: 500px;
     text-align: center;
     font-size: 16px;
+    background-image: linear-gradient(gray, white);
+    margin-top: 250px;
+    width: 500px;
 }
+
 
 #shortButton {
     background-color: #EEEE;
     margin-top: 250px;
-    width: 100px;
-    border-radius: 10px;
+    width: 100px;    
     margin-left: 20px;
 }
 
 #shortButton:hover {
     background-color: white;
     opacity: 1;
+    cursor: pointer;
 }
 
 #loading {
+    display: inline-block;
+
     height: 50px;
     width: 50px;
-    display: inline-block;
     color: #757575;
     border: 2px solid;
     border-top-color: #757575;
     border-radius: 50%;
+    
     animation: 1s loader infinite;
 }
 
