@@ -20,7 +20,7 @@ function confirmLink(){
             let newLink = data.shorturl
             if(newLink === undefined){
                 sleep(2)
-                shortenedLink.innerHTML = `Unknow URL`
+                shortenedLink.innerHTML = `Unknown URL`
                 changeColorLoading(element, `#757575`)
                 return                 
             }else{
