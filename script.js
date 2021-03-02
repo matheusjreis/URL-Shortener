@@ -3,19 +3,12 @@ function confirmLink(){
     let link = document.getElementById("linkBox").value
     let element = document.querySelector("#loading")
 
-    //shortenedLink.style.fontFamily = "'Brygada 1918', sans-serif"
-
     shortenedLink.innerHTML = ''
 
     changeColorLoading(element, `white`)
 
-    $.getJSON(
-        "https://is.gd/create.php?callback=?",
-        {
-            url: link,
-            format: "json",
-        }
-    ).done(
+    $.getJSON(`https://is.gd/create.php?format=json&url=`+`${link}` 
+        ,        
         function(data){
             let newLink = data.shorturl
             if(newLink === undefined){
@@ -28,8 +21,7 @@ function confirmLink(){
                 shortenedLink.innerHTML = `${newLink}`
                 changeColorLoading(element, `#757575`)
             }
-        }
-    )
+        });
 }
 
 function changeColorLoading(element, color){
