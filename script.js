@@ -17,7 +17,7 @@ function confirmLink(){
                 changeColorLoading(element, `#757575`)
                 return                 
             }else{
-                sleep(2)
+                sleep(2);
                 shortenedLink.innerHTML = `${newLink}`
                 changeColorLoading(element, `#757575`)
             }
