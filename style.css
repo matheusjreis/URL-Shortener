@@ -20,7 +20,7 @@ section{
     width: 50rem;
     height: 25rem;
     left: 5rem;
-    border-radius:3%;
+    border-radius:15px;
     text-align: center;
     margin: auto;
 }
@@ -67,15 +67,16 @@ input {
     animation: 1s loader infinite;
 }
 
+#shorterLink {
+    margin-top: 3rem;
+    color: #E0E0E0;
+    font-size: 1.3rem;
+}
+
+
 @keyframes loader{
     to {
         transform: rotate(360deg);
     }
 }
 
-
-div#shorterLink {
-    margin-top: 3rem;
-    color: #E0E0E0;
-    font-size: 1.3rem;
-}
